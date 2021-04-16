@@ -121,3 +121,40 @@
     flex-direction: column;
   }
 }
+
+.table {
+  max-width: 800px;
+}
+
+.table td code,
+.table th code {
+  background: 0;
+  font: 500 100%/1 Roboto Mono, monospace;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  padding: 0;
+}
+.table td,
+.table th {
+  border: 0;
+  margin: 0;
+  text-align: left;
+}
+.table td {
+  padding: 7px 8px 8px;
+}
+.table th {
+  height: 48px;
+  padding: 8px;
+  vertical-align: middle;
+}
+.table table {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: 14px/20px Roboto, Noto Sans, Noto Sans JP, Noto Sans KR,
+    Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali,
+    sans-serif;
+  margin: 16px 0 15px;
+  width: 100%;
+}
