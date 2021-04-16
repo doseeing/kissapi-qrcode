@@ -168,7 +168,7 @@ export default function Home() {
             </tbody>
           </table>
           <p>
-            <strong>Example:</strong>
+            <strong>Example</strong>
           </p>
           <p>
             <img
@@ -184,12 +184,27 @@ export default function Home() {
               cht=qr<br></br>chl=Hello+world<br></br>choe=UTF-8
             </code>
           </p>
+          <p>
+            <strong>About</strong>
+          </p>
           <div>
-            * Origin API is provided by{" "}
-            <a href="https://developers.google.com/chart/infographics/docs/qr_codes">
-              {" "}
-              Google Chart API
-            </a>
+            <ul>
+              <li>
+                Origin API is provided by{" "}
+                <a href="https://developers.google.com/chart/infographics/docs/qr_codes">
+                  {" "}
+                  Google Chart API
+                </a>
+              </li>
+              <li>
+                {" "}
+                Github Repo:
+                <a href="https://github.com/doseeing/kissapi-qrcode">
+                  {" "}
+                  https://github.com/doseeing/kissapi-qrcode
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </main>
