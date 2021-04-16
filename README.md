@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# QRCode API
+
+You can create a QR code on the fly with a URL GET request.
+
+vercel website: https://kissapi-qrocode.vercel.app/
 
 ## Getting Started
 
