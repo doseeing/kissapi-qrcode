@@ -2,7 +2,7 @@
 
 You can create a QR code on the fly with a URL GET request.
 
-vercel website: https://kissapi-qrocode.vercel.app/
+vercel website: https://kissapi-qrcode.vercel.app/
 
 ## Getting Started
 
