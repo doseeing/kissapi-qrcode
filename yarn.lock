@@ -1111,6 +1111,13 @@
   resolved "https://registry.npm.taobao.org/@types/json-schema/download/@types/json-schema-7.0.7.tgz?cache=0&sync_timestamp=1613379029028&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fjson-schema%2Fdownload%2F%40types%2Fjson-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
   integrity sha1-mKmTUWyFnrDVxMjwmDF6nqaNua0=
 
+"@vercel/analytics@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/@vercel/analytics/-/analytics-1.1.1.tgz#2a712378a95014a548b4f9d2ae1ea0721433908d"
+  integrity sha512-+NqgNmSabg3IFfxYhrWCfB/H+RCUOCR5ExRudNG2+pcRehq628DJB5e1u1xqwpLtn4pAYii4D98w7kofORAGQA==
+  dependencies:
+    server-only "^0.0.1"
+
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.npm.taobao.org/@webassemblyjs/ast/download/@webassemblyjs/ast-1.9.0.tgz?cache=0&sync_timestamp=1610041386122&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40webassemblyjs%2Fast%2Fdownload%2F%40webassemblyjs%2Fast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"
@@ -4585,6 +4592,11 @@ serialize-javascript@^4.0.0:
   integrity sha1-tSXhI4SJpez8Qq+sw/6Z5mb0sao=
   dependencies:
     randombytes "^2.1.0"
+
+server-only@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/server-only/-/server-only-0.0.1.tgz#0f366bb6afb618c37c9255a314535dc412cd1c9e"
+  integrity sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==
 
 set-blocking@^2.0.0, set-blocking@~2.0.0:
   version "2.0.0"
