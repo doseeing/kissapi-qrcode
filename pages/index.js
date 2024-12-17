@@ -193,7 +193,13 @@ export default function Home() {
                 Origin API is provided by{" "}
                 <a href="https://developers.google.com/chart/infographics/docs/qr_codes">
                   {" "}
-                  Google Chart API
+                  Google Chart API (deprecated)
+                </a>
+              </li>
+              <li>
+                Another API is provided by{" "}
+                <a href="https://quickchart.io/documentation/qr-codes/">
+                  quickchart
                 </a>
               </li>
               <li>
