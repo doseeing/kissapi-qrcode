@@ -1,36 +1,31 @@
-import QRCode from "qrcode";
-import { PassThrough } from "stream";
+import QRCode from "../../qrcode";
 
-export default async (req, res) => {
-  res.statusCode = 200;
-  res.setHeader("Content-Type", "image/png");
-  try {
-    const cht = req.query.cht || "qr";
-    const chs = req.query.chs || "150x150";
-    const chl = req.query.chl || "hello,world";
-    const choe = req.query.choe || "UTF-8";
-    const chld = req.query.chld || "L|4";
+export const config = {
+  runtime: "edge",
+};
 
-    const width = parseInt(
-      chs.split("x").length >= 2 ? chs.split("x")[0] : "150"
-    );
-    const errorCorrectionLevel =
-      chld.split("|").length >= 2 ? chld.split("|")[0] : "L";
-    const margin = parseInt(
-      chld.split("|").length >= 2 ? chld.split("|")[1] : "4"
-    );
+export default async (req) => {
+  const { searchParams } = new URL(req.url);
+  // try {
+  const cht = searchParams.get("cht") || "qr";
+  const chs = searchParams.get("chs") || "150x150";
+  const chl = searchParams.get("chl") || "hello,world";
+  const choe = searchParams.get("choe") || "UTF-8";
+  const chld = searchParams.get("chld") || "L|4";
 
-    // https://stackoverflow.com/questions/59863984/express-generate-and-return-qr-code-on-get-request
-    const qrStream = new PassThrough();
-    await QRCode.toFileStream(qrStream, chl, {
-      type: "png",
-      width: width,
-      errorCorrectionLevel: errorCorrectionLevel,
-      margin: margin,
-    });
+  const width = parseInt(
+    chs.split("x").length >= 2 ? chs.split("x")[0] : "150"
+  );
+  const errorCorrectionLevel =
+    chld.split("|").length >= 2 ? chld.split("|")[0] : "L";
+  const margin = parseInt(
+    chld.split("|").length >= 2 ? chld.split("|")[1] : "4"
+  );
 
-    qrStream.pipe(res);
-  } catch (err) {
-    console.error("Failed to return content", err);
-  }
+  const svg = await QRCode.toBuffer(chl, { type: "png" });
+
+  return new Response(svg, {
+    status: 200,
+    headers: { "Content-Type": "image/png" },
+  });
 };
