@@ -2,6 +2,9 @@ import QRCode from "../../qrcode";
 
 export const config = {
   runtime: "edge",
+  unstable_allowDynamic: [
+    "**/node_modules/pngjs/**", // use a glob to allow anything in the function-bind 3rd party module
+  ],
 };
 
 export default async (req) => {
