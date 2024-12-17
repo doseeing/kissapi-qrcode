@@ -174,7 +174,7 @@ export default function Home() {
             <img
               src={
                 rootURL +
-                "/api/qrcode?chs=150x150&amp;cht=qr&amp;chl=Hello%20world&amp;choe=UTF-8"
+                "/api/qrcode?chs=150x150&cht=qr&chl=Hello%20world&choe=UTF-8"
               }
               alt="QR code"
             ></img>
